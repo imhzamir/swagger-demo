@@ -1,0 +1,14 @@
+server:
+  port: 7007
+spring:
+  application.name: swagger-demo
+springdoc:
+  api-docs:
+    path: /api-docs
+  swagger-ui:
+    path: /swagger-ui
+#    tagsSorter: alpha
+    operationsSorter: method
+openapi:
+  dev-url: http://localhost:7007
+  prod-url: http://microservice.swagger/api
