@@ -9,5 +9,12 @@ pipeline{
                 '''
             }
         }
+        stage('jar build'){
+            steps{
+                sh '''
+                mvn clean package
+                '''
+            }
+        }
     }
 }
